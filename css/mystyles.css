@@ -1,0 +1,148 @@
+body{
+	background-image: url("../images/chocolate-wallpaper.jpg");
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+}
+#q1,#a1,
+#q2,#a2,
+#q3,#a3,
+#q4,#a4,
+#q5,#a5,
+#q6,#a6,
+#q7,#a7,
+#q8,#a8,
+#q9,#a9,
+#q10,#a10,
+#beginQuiz,#endQuiz{
+	display: none;
+}
+
+.centered {
+  /*
+  position: fixed;
+  top: 20%;
+  left: 25%;*/
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+}
+
+.style{
+	background-color: #FFFFCC;
+	width: 30em;
+	height: 25em;
+	border-radius: 1em;
+	padding: 1em 10em;
+  padding-bottom: 2em
+}
+
+.style h2, p, label{
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.1em;
+}
+
+.style h1{
+	font-family: 'Patrick Hand SC', cursive; 
+	text-align: center;
+}
+
+input[type=radio]:not(old){
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+}
+
+input[type=radio]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -2em;
+  line-height  : 1.5em;
+}
+
+input[type=radio]:not(old) + label > span{
+  display          : inline-block;
+  width            : 0.875em;
+  height           : 0.875em;
+  margin           : 0.25em 0.5em 0.25em 0.25em;
+  border           : 0.0625em solid rgb(192,192,192);
+  border-radius    : 0.25em;
+  background       : rgb(224,224,224);
+  background-image :    -moz-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :     -ms-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :      -o-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image : -webkit-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :         linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  vertical-align   : bottom;
+}
+
+input[type=radio]:not(old):checked + label > span{
+  background-image :    -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :     -ms-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :      -o-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image : -webkit-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :         linear-gradient(rgb(224,224,224),rgb(240,240,240));
+}
+
+input[type=radio]:not(old):checked + label > span > span{
+  display          : block;
+  width            : 0.5em;
+  height           : 0.5em;
+  margin           : 0.125em;
+  border           : 0.0625em solid rgb(115,153,77);
+  border-radius    : 0.125em;
+  background       : rgb(153,204,102);
+  background-image :    -moz-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :     -ms-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :      -o-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image : -webkit-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :         linear-gradient(rgb(179,217,140),rgb(153,204,102));
+}
+
+.progress{
+	text-align: center;
+	margin-top: 2.5em;
+}
+
+.button{
+	float: right;
+}
+
+#endQuiz.style{
+  text-align: center;
+}
+
+/*Medium Screens
+
+@media all and (min-height: 30em) {
+  .centered {
+    top: 30%;
+    left: 27%;
+  }
+
+  .style{
+    width: 35em;
+    height: 30em;
+    padding: 1em 10em;
+  }
+}
+
+@media all and (min-height: 400px) {
+  .centered {
+    margin-top: 15%;
+    margin-left: 25%;
+  }
+}
+@media all and (min-height: 500px) {
+  .style{
+    width: 35em;
+    height: 30em;
+  }
+}
+*/
+
+
